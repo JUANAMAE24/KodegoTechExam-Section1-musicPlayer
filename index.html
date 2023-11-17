@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9b84aaec60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container"> 
+        <div class="music-player">
+            <div class="disk play">
+                <img src="https://i.ibb.co/mzFgxQ8/taylor-swift.png" alt="" class="image-one">
+            </div>
+            <div>
+                <h1 class="music-name"><strong>All Too Well (Taylor's Version)</strong></h1>
+                <p class="artist-name">Taylor Swift</p>
+                <audio id="song">
+                    <source src="https://www.nobadsong.com/wp-content/uploads/2023/09/Taylor-Swift-All-Too-Well_(Nobadsong.com).mp3" type="audio/mpeg">
+                </audio>
+            </div>            
+            <div class="timer">
+                <span id="current">00:00</span>
+                <span id="duration">00:00</span>
+            </div>            
+            <div class="progress-area">
+                <div class="progress-bar">
+                    <input type="range" min="0" max="100" value="0" id="progress">
+                </div>
+            </div>                       
+            <div class="controls">
+                <div class="backward-btn">
+                    <i class="fa-solid fa-backward-step fa-2x"></i>
+                </div>
+                <div class="play-btn-pause" onclick="playPause()">
+                    <i class="fa-solid fa-play fa-2x" id="ctrlIcon"></i>
+                </div>
+                <div class="forward-btn">
+                    <i class="fa-solid fa-forward-step fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

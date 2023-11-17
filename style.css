@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: url("https://i.ibb.co/Fs8cBJp/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.music-player{
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    background: rgb(251, 248, 248);
+    opacity: 0.7;
+    padding: 30px 30px;
+    color: black;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.music-name, 
+.artist-name{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+
+}
+.music-name{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.artist-name{
+    font-size: 14px;
+
+}
+
+.image-one{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    right: 100px;
+    position: relative;
+   
+}
+.disk{
+    position: relative;
+    display: flex;
+    margin-left: 120px;
+    right: 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-image: url("https://i.ibb.co/26Bq793/disk.png");
+    background-size: cover;
+    padding: 0 30px;
+    
+  
+}
+.disk::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 50px;
+    background: rgb(93, 16, 93);
+    cursor: pointer;
+    margin: 5px 0;
+    position: relative;
+    opacity: 1;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    box-shadow: 0 5px 5px solid rgb(91, 4, 91);
+    border-radius: 50%;
+    border: 4px solid rgb(93, 16, 93);
+    position: relative;
+    animation-delay: 0s;
+
+}
+
+.controls {
+    margin: 40px 0 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls i{
+    font-size: 40px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    flex-direction: row;
+
+}
+
+.timer {
+    width: 100%;
+    font-size: .6rem;
+    margin: 0 0 2px 2px;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Courier New', Courier, monospace;
+
+}
+.backward-btn,
+.forward-btn {
+    color: rgb(162, 22, 83);
+    opacity: 0.8;
+}
+
+.play-btn-pause i{
+    display: inline-flex;
+    font-size: 35px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    color:#f0f0f0;
+    background: rgba(163, 27, 111, 0.9);
+    cursor: pointer;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    opacity: 2;
+}
+
+
+
+
+
+
+
+
